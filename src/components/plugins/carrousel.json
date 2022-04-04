@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_plugins_carrousels",
+  "info": {
+    "displayName": "Carrousel",
+    "icon": "images",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Medias": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Liens": {
+      "type": "component",
+      "repeatable": true,
+      "component": "plugins.lien"
+    }
+  }
+}
