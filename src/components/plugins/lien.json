@@ -2,15 +2,18 @@
   "collectionName": "components_plugins_liens",
   "info": {
     "displayName": "Lien",
-    "icon": "share"
+    "icon": "share",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "Titre": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
-    "Adresse": {
-      "type": "string"
+    "Url": {
+      "type": "string",
+      "required": true
     },
     "Description": {
       "type": "string"
@@ -21,6 +24,10 @@
         "_blank",
         "_self"
       ]
+    },
+    "Alias": {
+      "type": "string",
+      "required": true
     }
   }
 }

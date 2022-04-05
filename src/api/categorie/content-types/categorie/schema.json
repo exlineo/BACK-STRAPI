@@ -4,7 +4,8 @@
   "info": {
     "singularName": "categorie",
     "pluralName": "categories",
-    "displayName": "Categorie"
+    "displayName": "Categorie",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,9 +22,10 @@
           "localized": true
         }
       },
-      "type": "string"
+      "type": "string",
+      "required": true
     },
-    "alias": {
+    "Alias": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -40,25 +42,26 @@
       "type": "richtext"
     },
     "Media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "article": {
+    "Articles": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::article.article",
-      "inversedBy": "categorie"
+      "mappedBy": "Categorie"
     }
   }
 }

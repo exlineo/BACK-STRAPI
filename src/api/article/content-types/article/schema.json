@@ -22,7 +22,8 @@
           "localized": true
         }
       },
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Intro": {
       "pluginOptions": {
@@ -93,19 +94,20 @@
       },
       "component": "plugins.lien"
     },
-    "alias": {
+    "Alias": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "string"
+      "type": "string",
+      "required": true
     },
-    "categorie": {
+    "Categorie": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::categorie.categorie",
-      "inversedBy": "article"
+      "inversedBy": "Articles"
     }
   }
 }
