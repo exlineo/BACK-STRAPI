@@ -52,6 +52,14 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::article.article"
+    },
+    "Ordre": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "integer"
     }
   }
 }

@@ -108,6 +108,14 @@
       "relation": "manyToOne",
       "target": "api::categorie.categorie",
       "inversedBy": "Articles"
+    },
+    "Ordre": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "integer"
     }
   }
 }
