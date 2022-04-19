@@ -1,12 +1,21 @@
 # Backend headless
 Le dépôt propose une organisation en mode CMS basique pour la réalisation de blogs et sites Internet simples. Il comprend des catégories, articles et menus ainsi que quelques composants initiaux (liens, carrousel).
 
-## Déploiement heroku
+## Déploiement heroku avec GIT
 Pour Heroku nous avons appliqué le tutoriel fourni par Strapi pour ajouter une base de données Postgre. Le déploiement du back nécessite de réaliser quelques étapes :
 1 - database.js : ajouter un document database.js dans config/env/production/ ;
 2 - créer une branche au nom du projet, opérer les modifications éventuelles sur cette branche. La pusher et la relier à un projet sur Heroku ;
 3 - dans le projet Heroku, onglet Resources, ajouter le composant Heroku Postgres (gratuit) ;
 4 - Settings > Config Vars, Reveal Config Vars, vérifier qu'il y a bien DATABASE_URL, ajouter APP_KEYS avec une valeur quelconque. La première variable sera traitée pour obtenir le mot de passe, l'adresse (etc) pour l'accès à la base de données, la seconde palie au manque du fichier .env dans le dossier du projet.
+
+## Déploiement directement sur Heroku
+1 - Ajouter l'adresse Git de Heroku : heroku git:remote -a [nom-de-app] ou git remote add [nom] [adresse-git]
+2 - git remote -v pour vérifier l'ajout
+3 - Publication d'une branche sur le projet : git push [nom] ma-branche:main
+
+## Paramétrer un environnement multiple sur Heroku
+1 - heroku create --remote [nom-app]
+2 - 
 
 # 🚀 Getting started with Strapi
 
