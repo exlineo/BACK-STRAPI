@@ -27,22 +27,6 @@
       "component": "plugins.lien",
       "required": true
     },
-    "Menu": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "enumeration",
-      "enum": [
-        "principal",
-        "secondaire",
-        "pied",
-        "produits"
-      ],
-      "required": true,
-      "default": "principal"
-    },
     "Categorie": {
       "type": "relation",
       "relation": "oneToOne",
@@ -60,6 +44,16 @@
         }
       },
       "type": "integer"
+    },
+    "Rattachement": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::structure.structure"
+    },
+    "Parent": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
     }
   }
 }

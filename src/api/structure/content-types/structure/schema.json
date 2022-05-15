@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "structures",
+  "info": {
+    "singularName": "structure",
+    "pluralName": "structures",
+    "displayName": "Structure",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titre": {
+      "type": "string",
+      "required": true
+    },
+    "Alias": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Menu",
+        "ColonneGauche",
+        "ColonneDroite",
+        "Contenu",
+        "Pied",
+        "Entete"
+      ],
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": false
+    }
+  }
+}
