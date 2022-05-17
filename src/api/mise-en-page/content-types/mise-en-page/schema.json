@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mise_en_pages",
+  "info": {
+    "singularName": "mise-en-page",
+    "pluralName": "mise-en-pages",
+    "displayName": "Mise en page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    }
+  }
+}
