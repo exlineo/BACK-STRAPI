@@ -59,6 +59,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::mise-en-page.mise-en-page"
+    },
+    "Formulaire": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::formulaire.formulaire"
     }
   }
 }

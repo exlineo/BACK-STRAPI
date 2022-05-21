@@ -4,7 +4,8 @@
   "info": {
     "singularName": "mise-en-page",
     "pluralName": "mise-en-pages",
-    "displayName": "Mise en page"
+    "displayName": "Mise en page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,10 +13,15 @@
   "pluginOptions": {},
   "attributes": {
     "Titre": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Description": {
       "type": "text"
+    },
+    "Alias": {
+      "type": "string",
+      "required": true
     }
   }
 }

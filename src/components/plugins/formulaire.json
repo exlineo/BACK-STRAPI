@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_plugins_formulaires",
+  "info": {
+    "displayName": "Formulaire",
+    "icon": "edit",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Titre": {
+      "type": "string",
+      "required": true
+    },
+    "Infos": {
+      "type": "string"
+    },
+    "Aide": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "input",
+        "textarea",
+        "select",
+        "checkbox",
+        "radiobutton"
+      ],
+      "required": true
+    },
+    "Options": {
+      "type": "string"
+    },
+    "Obligatoire": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}
