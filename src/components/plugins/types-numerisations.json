@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_plugins_types_numerisations",
+  "info": {
+    "displayName": "TypesNumerisations",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "Types": {
+      "type": "enumeration",
+      "enum": [
+        "Documents papier",
+        "Livres anciens",
+        "VHS",
+        "Enregistrements audio",
+        "Bandes magnétiques",
+        "Diapositives",
+        "Photos",
+        "Grands formats"
+      ]
+    }
+  }
+}

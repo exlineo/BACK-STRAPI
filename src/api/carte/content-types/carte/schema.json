@@ -1,10 +1,11 @@
 {
   "kind": "collectionType",
-  "collectionName": "agendas",
+  "collectionName": "cartes",
   "info": {
-    "singularName": "agenda",
-    "pluralName": "agendas",
-    "displayName": "Agenda"
+    "singularName": "carte",
+    "pluralName": "cartes",
+    "displayName": "Carte",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -33,15 +34,7 @@
       "type": "string",
       "required": true
     },
-    "Date": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "date"
-    },
-    "Intro": {
+    "Description": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -49,44 +42,56 @@
       },
       "type": "text"
     },
-    "Description": {
+    "Localisation": {
+      "type": "component",
+      "repeatable": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "richtext"
+      "component": "plugins.localisation",
+      "required": true
     },
     "Lien": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
       "component": "plugins.lien"
     },
-    "Media": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false,
+    "Coordonnees": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
-      }
+      },
+      "type": "text",
+      "required": true
+    },
+    "Type": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "plugins.types-numerisations"
+    },
+    "Categorie": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::categorie.categorie"
     },
     "categorie": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::categorie.categorie",
-      "inversedBy": "Agendas"
+      "inversedBy": "Cartes"
     }
   }
 }

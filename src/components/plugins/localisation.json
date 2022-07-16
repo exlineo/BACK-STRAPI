@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_plugins_localisations",
+  "info": {
+    "displayName": "localisation",
+    "icon": "map-marked",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Titre": {
+      "type": "string",
+      "required": true
+    },
+    "Alias": {
+      "type": "string",
+      "required": true
+    },
+    "Latitude": {
+      "type": "float",
+      "required": true
+    },
+    "Longitude": {
+      "type": "float",
+      "required": true
+    }
+  }
+}
