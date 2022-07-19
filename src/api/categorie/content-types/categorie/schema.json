@@ -70,6 +70,18 @@
         }
       },
       "type": "integer"
+    },
+    "Agendas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::agenda.agenda",
+      "mappedBy": "categorie"
+    },
+    "Cartes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::carte.carte",
+      "mappedBy": "categorie"
     }
   }
 }
