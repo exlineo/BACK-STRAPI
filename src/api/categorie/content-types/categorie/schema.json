@@ -82,6 +82,12 @@
       "relation": "oneToMany",
       "target": "api::carte.carte",
       "mappedBy": "categorie"
+    },
+    "menu": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::menu.menu",
+      "inversedBy": "Articles"
     }
   }
 }
